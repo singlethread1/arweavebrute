@@ -17,8 +17,7 @@
 //This is for puzzle #5. Change these values to work with other puzzles.
 ///////////////////////////////////////////////////////////////////////////////////////
 //8 byte salt - the 8 bytes that follow the "Salted__" prefix
-const char ciphersalt[8] = {
-	0x84, 0xDB, 0xFF, 0x78, 0x6C, 0x98, 0x3A, 0x3F }; 
+const char ciphersalt[8] = { 0x84, 0xDB, 0xFF, 0x78, 0x6C, 0x98, 0x3A, 0x3F }; 
 
 //First 16 bytes of ciphertext (from bytes 16 to 32 of encrypted message - after the "Salted__" and 8 byte salt).
 //More than enough to check for {"kty":"RSA"
