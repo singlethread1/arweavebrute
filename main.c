@@ -102,8 +102,12 @@ while (countingsize < 144 ) {
 
 int main(void) {
 	
-	char allres[4000]; //Not sure if 4000 is neccesarry.
+	//This can be changed depending on BATCH_SIZE in the python script. I'm sure there's a better way to do this.
+	//Not sure exactly why, but changing this messes up the final result and must be adjusted below (with the strcpy)
+	char allres[4000]; 
 	char finalres[4000];
+	/////////////////////////////////
+	
 	int bufferLength = 64;
 	char buffer[bufferLength]; /* not ISO 90 compatible */
 	//strcpy(allres, "0");
